@@ -24,8 +24,7 @@ public class StockFileReader {
 	}
 	
 	static String readFirstLine(String path) throws IOException {
-	    try (BufferedReader br =
-	                   new BufferedReader(new FileReader(path))) {
+	    try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 	        return br.readLine();
 	    }
 	}
